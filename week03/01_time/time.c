@@ -12,6 +12,7 @@ The program converts given number of seconds to HMS.
     int minutes = 0;
     int hours = 0;
     int remaining_seconds = 0;
+    int remaining_minutes = 0;
 
     // Get the number of seconds
     puts("Enter the number of seconds");
@@ -26,11 +27,13 @@ The program converts given number of seconds to HMS.
     //Calculate remaining seconds
     remaining_seconds = seconds % 60;
 
+    remaining_minutes = minutes % 60;
+
     //Print the result
     printf("%d seconds is %d hours, %d minutes and %d seconds\n",
         seconds, 
         hours,
-        minutes, 
+        remaining_minutes, 
         remaining_seconds);
     
     //TODO by Thursday
